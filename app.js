@@ -1,4 +1,5 @@
 require('dotenv').config();
+console.log(process.env)
 const express = require('express')
 const products_routes = require('./routes/products.js')
 const slugify = require('slugify');
