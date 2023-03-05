@@ -17,7 +17,7 @@ app.use('/', products_routes)
 
 
 // Bienvenida
-const welcome = slugify('WELCOME','*');
+const welcome = slugify('WELCOME TO THE SERVER','*');
 
 
 
