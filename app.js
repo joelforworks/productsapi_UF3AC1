@@ -1,5 +1,6 @@
 const express = require('express')
 const products_routes = require('./routes/products.js')
+const slugify = require('slugify');
 
 //Server instantiation
 const app = express()
@@ -14,8 +15,15 @@ app.use(express.static('/views'));
 app.use(express.json())
 app.use('/', products_routes)
 
+
+// Bienvenida
+const welcome = slugify('WELCOME','*');
+
+
+
 //Server startup
 app.listen(5000, () => {
+    console.log(welcome);
     console.log(`server is listening on port ${PORT}`)
 })
 
