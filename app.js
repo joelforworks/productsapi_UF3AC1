@@ -1,5 +1,6 @@
 if (process.env.NODE_ENV == 'production') {
   require('dotenv').config();
+    console.log(process.env.MONGOURI?'mongo env':'mongo not found');
 }
 
 const express = require('express')
