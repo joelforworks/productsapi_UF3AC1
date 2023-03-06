@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "node-sass ./views/styles/main.scss ./views/styles/styles.css",
-    "build": "npm install && npm run build:css"
+    "build": "npm run build:css && npm install && node --unhandled-rejections=strict app.js"
   },
   "author": "",
   "license": "ISC",
