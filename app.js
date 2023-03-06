@@ -1,6 +1,7 @@
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config();
   console.log(process.env);
+    console.log("MONGO URI",process.env.MONGOURI);
 }
 
 const express = require('express')
